@@ -1,1 +1,3 @@
 The Fake News & Scam Checker is designed to help people stay safe online by quickly analyzing suspicious messages, articles, or posts. With the rise of misinformation and online scams, it has become difficult to know what is real and what is fake. This tool scans text for common keywords and patterns used in scams, phishing attempts, and misleading news. Its purpose is to raise awareness, alert users to possible risks, and encourage them to think critically before believing or sharing online content. While it cannot guarantee 100% accuracy, it acts as a helpful first step in protecting yourself from fraud and misinformation.
+
+sahasra
