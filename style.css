@@ -36,7 +36,8 @@ textarea {
   border: 2px solid #C779D0;
   border-radius: 10px;
   resize: none;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 button {
@@ -53,6 +54,11 @@ button {
 
 button:hover {
   background: linear-gradient(to right, rgb(119, 161, 211), rgb(121, 203, 202), rgb(230, 132, 174));
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }
 
 #result {
