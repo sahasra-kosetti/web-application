@@ -43,7 +43,7 @@ button {
   margin-top: 15px;
   padding: 12px 25px;
   border: none;
-  background: linear-gradient(to right, rgb(119, 161, 211), rgb(121, 203, 202), rgb(230, 132, 174)););
+  background: linear-gradient(to right, rgb(119, 161, 211), rgb(121, 203, 202), rgb(230, 132, 174));
   color: white;
   font-size: 16px;
   border-radius: 10px;
@@ -61,4 +61,11 @@ button:hover {
   font-size: 15px;
   padding: 12px;
   border-radius: 10px;
+}
+
+/* Responsive container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
