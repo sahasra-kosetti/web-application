@@ -15,7 +15,10 @@ function checkFakeNews() {
     "bitcoin", "investment"
   ];
 
-  const fakeIndicators = scamKeywords.filter(word => text.includes(word));
+  const fakeIndicators = scamKeywords.filter(word => {
+    const regex = new RegExp(`\\b${word}\\b`, "i");
+    return regex.test(text);
+  });
 
   if (fakeIndicators.length > 0) {
     result.innerHTML = `🚨 Warning: Possible scam or fake news detected! <br> Keywords found: ${fakeIndicators.join(", ")}`;
