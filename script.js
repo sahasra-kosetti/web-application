@@ -15,7 +15,10 @@ function checkFakeNews() {
     "bitcoin", "investment"
   ];
 
-  const fakeIndicators = scamKeywords.filter(word => text.includes(word));
+  const fakeIndicators = scamKeywords.filter(word => {
+    const regex = new RegExp(`\\b${word}\\b`, "i");
+    return regex.test(text);
+  });
 
   if (fakeIndicators.length > 0) {
     result.innerHTML = `🚨 Warning: Possible scam or fake news detected! <br> Keywords found: ${fakeIndicators.join(", ")}`;
@@ -27,3 +30,11 @@ function checkFakeNews() {
     result.style.color = "#155724";
   }
 }
+
+const input = document.getElementById("newsInput");
+const checkBtn = document.querySelector("button");
+
+checkBtn.disabled = !input.value.trim();
+input.addEventListener("input", () => {
+  checkBtn.disabled = !input.value.trim();
+});
