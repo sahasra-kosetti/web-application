@@ -27,3 +27,11 @@ function checkFakeNews() {
     result.style.color = "#155724";
   }
 }
+
+const input = document.getElementById("newsInput");
+const checkBtn = document.querySelector("button");
+
+checkBtn.disabled = !input.value.trim();
+input.addEventListener("input", () => {
+  checkBtn.disabled = !input.value.trim();
+});
